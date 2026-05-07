@@ -30,14 +30,20 @@
         <li class="nav-item"><a class="nav-link active" href="#accueil">Accueil</a></li>
         <li class="nav-item"><a class="nav-link" href="#pourquoi">Pourquoi Bio ?</a></li>
         <li class="nav-item"><a class="nav-link" href="#produits">Produits</a></li>
+        <li class="nav-item"><a class="nav-link" href="product.html">Catalogue</a></li>
         <li class="nav-item"><a class="nav-link" href="#ingredients">Ingrédients</a></li>
         <li class="nav-item"><a class="nav-link" href="#avis">Avis</a></li>
         <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
       </ul>
     </div>
-    <a href="https://www.instagram.com/biogam.shop/" target="_blank" class="nav-link btn-insta d-none d-lg-block">
-      <i class="bi bi-instagram me-1"></i> Nous suivre
-    </a>
+    <div class="d-none d-lg-flex align-items-center gap-2">
+      <a href="https://wa.me/213000000000" target="_blank" class="nav-link btn-whatsapp btn-icon-only" title="WhatsApp">
+        <i class="bi bi-whatsapp"></i>
+      </a>
+      <a href="https://www.instagram.com/biogam.shop/" target="_blank" class="nav-link btn-insta btn-icon-only" title="Instagram">
+        <i class="bi bi-instagram"></i>
+      </a>
+    </div>
   </div>
 </nav>
 
@@ -51,12 +57,15 @@
         <p class="lead mt-3">
           Découvrez notre gamme de cosmétiques biologiques, formulés avec les meilleurs ingrédients naturels pour révéler votre beauté authentique — sans compromis sur votre santé.
         </p>
-        <div class="d-flex flex-wrap gap-3 mt-4">
+        <div class="d-flex flex-wrap align-items-center gap-3 mt-4">
           <a href="#produits" class="btn btn-primary-bio">
             <i class="bi bi-bag-heart me-2"></i>Découvrir nos produits
           </a>
-          <a href="https://www.instagram.com/biogam.shop/" target="_blank" class="btn btn-outline-bio">
-            <i class="bi bi-instagram me-2"></i>Instagram
+          <a href="https://wa.me/213000000000" target="_blank" class="btn btn-whatsapp-hero btn-icon-only" title="WhatsApp">
+            <i class="bi bi-whatsapp"></i>
+          </a>
+          <a href="https://www.instagram.com/biogam.shop/" target="_blank" class="btn btn-outline-bio btn-icon-only" title="Instagram">
+            <i class="bi bi-instagram"></i>
           </a>
         </div>
         <div class="hero-stats">
@@ -127,23 +136,14 @@
   </div>
 </section>
 
-<!-- ═══════════════════════ PRODUCTS ═══════════════════════ -->
+<!-- ═══════════════════════ PRODUCTS SHOWCASE ═══════════════════════ -->
 <section class="products-section" id="produits">
   <div class="container">
     <div class="text-center mb-5">
       <span class="section-badge">Notre Gamme</span>
       <h2 class="section-title">Nos Produits Vedettes</h2>
       <div class="divider"></div>
-      <p class="section-sub">Des formules uniques, riches en actifs naturels, pour prendre soin de vous au quotidien.</p>
-    </div>
-
-    <!-- Category Filter -->
-    <div class="product-filters text-center mb-5 fade-up">
-      <button class="filter-btn active" data-filter="all">Tous</button>
-      <button class="filter-btn" data-filter="masques">🧖 Masques</button>
-      <button class="filter-btn" data-filter="huiles">🫒 Huiles</button>
-      <button class="filter-btn" data-filter="cremes">🧴 Crèmes</button>
-      <button class="filter-btn" data-filter="soins">✨ Soins</button>
+      <p class="section-sub">Des formules uniques, riches en actifs naturels, pour prendre soin de vous au quotidien.<br>Découvrez notre sélection phare — et explorez <a href="product.html" style="color:var(--green-dark);font-weight:600;">tout notre catalogue</a>.</p>
     </div>
 
     <div class="row g-4 mt-2" id="productGrid">
@@ -154,8 +154,8 @@
           <div class="product-img-wrap">
             <img src="assets/images/product/ماسك الكنكر.webp" alt="ماسك الكنكر">
             <div class="product-overlay">
+              <a href="https://wa.me/213000000000" target="_blank" class="overlay-btn"><i class="bi bi-whatsapp"></i></a>
               <a href="https://www.instagram.com/biogam.shop/" target="_blank" class="overlay-btn"><i class="bi bi-instagram"></i></a>
-              <a href="https://www.instagram.com/biogam.shop/" target="_blank" class="overlay-btn"><i class="bi bi-bag-plus"></i></a>
             </div>
             <span class="product-badge badge-hot">Bestseller</span>
           </div>
@@ -165,7 +165,7 @@
             <p class="product-name-sub">Masque au Curcuma</p>
             <div class="product-rating">★★★★★ <span>(52)</span></div>
             <div class="product-footer">
-              <a href="https://www.instagram.com/biogam.shop/" target="_blank" class="btn-commander"><i class="bi bi-bag-heart me-1"></i>Commander</a>
+              <a href="https://wa.me/213000000000" target="_blank" class="btn-commander"><i class="bi bi-whatsapp me-1"></i>Commander</a>
             </div>
           </div>
         </div>
@@ -177,8 +177,8 @@
           <div class="product-img-wrap">
             <img src="assets/images/product/ماسك مجدد الخلايا البشرة.webp" alt="ماسك مجدد الخلايا البشرة">
             <div class="product-overlay">
+              <a href="https://wa.me/213000000000" target="_blank" class="overlay-btn"><i class="bi bi-whatsapp"></i></a>
               <a href="https://www.instagram.com/biogam.shop/" target="_blank" class="overlay-btn"><i class="bi bi-instagram"></i></a>
-              <a href="https://www.instagram.com/biogam.shop/" target="_blank" class="overlay-btn"><i class="bi bi-bag-plus"></i></a>
             </div>
             <span class="product-badge badge-new">Nouveau</span>
           </div>
@@ -188,7 +188,7 @@
             <p class="product-name-sub">Masque Régénérant Cellulaire</p>
             <div class="product-rating">★★★★★ <span>(38)</span></div>
             <div class="product-footer">
-              <a href="https://www.instagram.com/biogam.shop/" target="_blank" class="btn-commander"><i class="bi bi-bag-heart me-1"></i>Commander</a>
+              <a href="https://wa.me/213000000000" target="_blank" class="btn-commander"><i class="bi bi-whatsapp me-1"></i>Commander</a>
             </div>
           </div>
         </div>
@@ -200,8 +200,8 @@
           <div class="product-img-wrap">
             <img src="assets/images/product/غاسول الوجه.webp" alt="غاسول الوجه">
             <div class="product-overlay">
+              <a href="https://wa.me/213000000000" target="_blank" class="overlay-btn"><i class="bi bi-whatsapp"></i></a>
               <a href="https://www.instagram.com/biogam.shop/" target="_blank" class="overlay-btn"><i class="bi bi-instagram"></i></a>
-              <a href="https://www.instagram.com/biogam.shop/" target="_blank" class="overlay-btn"><i class="bi bi-bag-plus"></i></a>
             </div>
             <span class="product-badge badge-hot">Top Vente</span>
           </div>
@@ -211,7 +211,7 @@
             <p class="product-name-sub">Ghassoul pour le Visage</p>
             <div class="product-rating">★★★★★ <span>(64)</span></div>
             <div class="product-footer">
-              <a href="https://www.instagram.com/biogam.shop/" target="_blank" class="btn-commander"><i class="bi bi-bag-heart me-1"></i>Commander</a>
+              <a href="https://wa.me/213000000000" target="_blank" class="btn-commander"><i class="bi bi-whatsapp me-1"></i>Commander</a>
             </div>
           </div>
         </div>
@@ -223,8 +223,8 @@
           <div class="product-img-wrap">
             <img src="assets/images/product/Citron et Huile d'Amande Crème pour les mains.webp" alt="Crème Citron & Amande">
             <div class="product-overlay">
+              <a href="https://wa.me/213000000000" target="_blank" class="overlay-btn"><i class="bi bi-whatsapp"></i></a>
               <a href="https://www.instagram.com/biogam.shop/" target="_blank" class="overlay-btn"><i class="bi bi-instagram"></i></a>
-              <a href="https://www.instagram.com/biogam.shop/" target="_blank" class="overlay-btn"><i class="bi bi-bag-plus"></i></a>
             </div>
           </div>
           <div class="product-info">
@@ -233,43 +233,20 @@
             <p class="product-name-sub">Crème pour les Mains</p>
             <div class="product-rating">★★★★★ <span>(29)</span></div>
             <div class="product-footer">
-              <a href="https://www.instagram.com/biogam.shop/" target="_blank" class="btn-commander"><i class="bi bi-bag-heart me-1"></i>Commander</a>
+              <a href="https://wa.me/213000000000" target="_blank" class="btn-commander"><i class="bi bi-whatsapp me-1"></i>Commander</a>
             </div>
           </div>
         </div>
       </div>
 
-      <!-- 5 – Orchidée et Huile d'Amande -->
-      <div class="col-sm-6 col-lg-4 fade-up product-item" data-category="cremes" style="transition-delay:.1s">
-        <div class="product-card-v2">
-          <div class="product-img-wrap">
-            <img src="assets/images/product/Orchidée et Huile d'Amande Crème pour les mains.webp" alt="Crème Orchidée & Amande">
-            <div class="product-overlay">
-              <a href="https://www.instagram.com/biogam.shop/" target="_blank" class="overlay-btn"><i class="bi bi-instagram"></i></a>
-              <a href="https://www.instagram.com/biogam.shop/" target="_blank" class="overlay-btn"><i class="bi bi-bag-plus"></i></a>
-            </div>
-            <span class="product-badge badge-new">Nouveau</span>
-          </div>
-          <div class="product-info">
-            <span class="product-category">Crèmes</span>
-            <h5 class="product-name">Crème Orchidée & Huile d'Amande</h5>
-            <p class="product-name-sub">Crème pour les Mains</p>
-            <div class="product-rating">★★★★☆ <span>(33)</span></div>
-            <div class="product-footer">
-              <a href="https://www.instagram.com/biogam.shop/" target="_blank" class="btn-commander"><i class="bi bi-bag-heart me-1"></i>Commander</a>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- 6 – Huile Problèmes Capillaires -->
-      <div class="col-sm-6 col-lg-4 fade-up product-item" data-category="huiles" style="transition-delay:.2s">
+      <!-- 5 – Huile Problèmes Capillaires -->
+      <div class="col-sm-6 col-lg-4 fade-up product-item" data-category="huiles" style="transition-delay:.1s">
         <div class="product-card-v2">
           <div class="product-img-wrap">
             <img src="assets/images/product/HUILE POUR RÉSOUORE LES PROBLEMES CAPILLAIRES زيت لحل مشاكل الشعر.webp" alt="Huile Capillaire">
             <div class="product-overlay">
+              <a href="https://wa.me/213000000000" target="_blank" class="overlay-btn"><i class="bi bi-whatsapp"></i></a>
               <a href="https://www.instagram.com/biogam.shop/" target="_blank" class="overlay-btn"><i class="bi bi-instagram"></i></a>
-              <a href="https://www.instagram.com/biogam.shop/" target="_blank" class="overlay-btn"><i class="bi bi-bag-plus"></i></a>
             </div>
             <span class="product-badge badge-hot">Bestseller</span>
           </div>
@@ -279,109 +256,20 @@
             <p class="product-name-sub">Huile Anti-Problèmes Capillaires</p>
             <div class="product-rating">★★★★★ <span>(71)</span></div>
             <div class="product-footer">
-              <a href="https://www.instagram.com/biogam.shop/" target="_blank" class="btn-commander"><i class="bi bi-bag-heart me-1"></i>Commander</a>
+              <a href="https://wa.me/213000000000" target="_blank" class="btn-commander"><i class="bi bi-whatsapp me-1"></i>Commander</a>
             </div>
           </div>
         </div>
       </div>
 
-      <!-- 7 – Huile de Ricin -->
-      <div class="col-sm-6 col-lg-4 fade-up product-item" data-category="huiles">
-        <div class="product-card-v2">
-          <div class="product-img-wrap">
-            <img src="assets/images/product/Huile de Ricin زيت الخروع.webp" alt="Huile de Ricin">
-            <div class="product-overlay">
-              <a href="https://www.instagram.com/biogam.shop/" target="_blank" class="overlay-btn"><i class="bi bi-instagram"></i></a>
-              <a href="https://www.instagram.com/biogam.shop/" target="_blank" class="overlay-btn"><i class="bi bi-bag-plus"></i></a>
-            </div>
-          </div>
-          <div class="product-info">
-            <span class="product-category">Huiles</span>
-            <h5 class="product-name">زيت الخروع</h5>
-            <p class="product-name-sub">Huile de Ricin</p>
-            <div class="product-rating">★★★★★ <span>(45)</span></div>
-            <div class="product-footer">
-              <a href="https://www.instagram.com/biogam.shop/" target="_blank" class="btn-commander"><i class="bi bi-bag-heart me-1"></i>Commander</a>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- 8 – Huile de Fenugrec -->
-      <div class="col-sm-6 col-lg-4 fade-up product-item" data-category="huiles" style="transition-delay:.1s">
-        <div class="product-card-v2">
-          <div class="product-img-wrap">
-            <img src="assets/images/product/Huile de Fenugrec زيت الحلب.webp" alt="Huile de Fenugrec">
-            <div class="product-overlay">
-              <a href="https://www.instagram.com/biogam.shop/" target="_blank" class="overlay-btn"><i class="bi bi-instagram"></i></a>
-              <a href="https://www.instagram.com/biogam.shop/" target="_blank" class="overlay-btn"><i class="bi bi-bag-plus"></i></a>
-            </div>
-          </div>
-          <div class="product-info">
-            <span class="product-category">Huiles</span>
-            <h5 class="product-name">زيت الحلبة</h5>
-            <p class="product-name-sub">Huile de Fenugrec</p>
-            <div class="product-rating">★★★★☆ <span>(37)</span></div>
-            <div class="product-footer">
-              <a href="https://www.instagram.com/biogam.shop/" target="_blank" class="btn-commander"><i class="bi bi-bag-heart me-1"></i>Commander</a>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- 9 – La Nigelle -->
+      <!-- 6 – Huile Royale de Luxe -->
       <div class="col-sm-6 col-lg-4 fade-up product-item" data-category="huiles" style="transition-delay:.2s">
-        <div class="product-card-v2">
-          <div class="product-img-wrap">
-            <img src="assets/images/product/La Nigelle حبة البركة.webp" alt="La Nigelle">
-            <div class="product-overlay">
-              <a href="https://www.instagram.com/biogam.shop/" target="_blank" class="overlay-btn"><i class="bi bi-instagram"></i></a>
-              <a href="https://www.instagram.com/biogam.shop/" target="_blank" class="overlay-btn"><i class="bi bi-bag-plus"></i></a>
-            </div>
-            <span class="product-badge badge-hot">Top Vente</span>
-          </div>
-          <div class="product-info">
-            <span class="product-category">Huiles</span>
-            <h5 class="product-name">حبة البركة</h5>
-            <p class="product-name-sub">Huile de Nigelle</p>
-            <div class="product-rating">★★★★★ <span>(58)</span></div>
-            <div class="product-footer">
-              <a href="https://www.instagram.com/biogam.shop/" target="_blank" class="btn-commander"><i class="bi bi-bag-heart me-1"></i>Commander</a>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- 10 – Huile de Sésame -->
-      <div class="col-sm-6 col-lg-4 fade-up product-item" data-category="huiles">
-        <div class="product-card-v2">
-          <div class="product-img-wrap">
-            <img src="assets/images/product/Huile de Sésame زيت السمسم.webp" alt="Huile de Sésame">
-            <div class="product-overlay">
-              <a href="https://www.instagram.com/biogam.shop/" target="_blank" class="overlay-btn"><i class="bi bi-instagram"></i></a>
-              <a href="https://www.instagram.com/biogam.shop/" target="_blank" class="overlay-btn"><i class="bi bi-bag-plus"></i></a>
-            </div>
-          </div>
-          <div class="product-info">
-            <span class="product-category">Huiles</span>
-            <h5 class="product-name">زيت السمسم</h5>
-            <p class="product-name-sub">Huile de Sésame</p>
-            <div class="product-rating">★★★★☆ <span>(42)</span></div>
-            <div class="product-footer">
-              <a href="https://www.instagram.com/biogam.shop/" target="_blank" class="btn-commander"><i class="bi bi-bag-heart me-1"></i>Commander</a>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- 11 – Huile Royale de Luxe -->
-      <div class="col-sm-6 col-lg-4 fade-up product-item" data-category="huiles" style="transition-delay:.1s">
         <div class="product-card-v2">
           <div class="product-img-wrap">
             <img src="assets/images/product/Huile Royale de Luxe زيت الملكي الفاخر للوجه.webp" alt="Huile Royale de Luxe">
             <div class="product-overlay">
+              <a href="https://wa.me/213000000000" target="_blank" class="overlay-btn"><i class="bi bi-whatsapp"></i></a>
               <a href="https://www.instagram.com/biogam.shop/" target="_blank" class="overlay-btn"><i class="bi bi-instagram"></i></a>
-              <a href="https://www.instagram.com/biogam.shop/" target="_blank" class="overlay-btn"><i class="bi bi-bag-plus"></i></a>
             </div>
             <span class="product-badge badge-premium">Premium</span>
           </div>
@@ -391,7 +279,7 @@
             <p class="product-name-sub">Huile Royale de Luxe</p>
             <div class="product-rating">★★★★★ <span>(67)</span></div>
             <div class="product-footer">
-              <a href="https://www.instagram.com/biogam.shop/" target="_blank" class="btn-commander"><i class="bi bi-bag-heart me-1"></i>Commander</a>
+              <a href="https://wa.me/213000000000" target="_blank" class="btn-commander"><i class="bi bi-whatsapp me-1"></i>Commander</a>
             </div>
           </div>
         </div>
@@ -399,10 +287,18 @@
 
     </div>
 
-    <div class="text-center mt-5">
-      <a href="https://www.instagram.com/biogam.shop/" target="_blank" class="btn btn-primary-bio">
-        <i class="bi bi-instagram me-2"></i>Voir tous les produits sur Instagram
+    <div class="text-center mt-5 fade-up">
+      <a href="product.html" class="btn btn-primary-bio btn-lg">
+        <i class="bi bi-grid me-2"></i>Voir tout le catalogue
       </a>
+      <div class="d-flex justify-content-center gap-3 mt-3">
+        <a href="https://wa.me/213000000000" target="_blank" class="btn btn-whatsapp-hero btn-sm">
+          <i class="bi bi-whatsapp me-1"></i>Commander via WhatsApp
+        </a>
+        <a href="https://www.instagram.com/biogam.shop/" target="_blank" class="btn btn-outline-bio btn-sm">
+          <i class="bi bi-instagram me-1"></i>Suivez-nous
+        </a>
+      </div>
     </div>
   </div>
 </section>
@@ -720,6 +616,11 @@
     </div>
   </div>
 </footer>
+
+<!-- Floating WhatsApp Button -->
+<a href="https://wa.me/213000000000" target="_blank" class="whatsapp-float" title="Contactez-nous sur WhatsApp">
+  <i class="bi bi-whatsapp"></i>
+</a>
 
 <!-- Scroll to top -->
 <button id="scrollTop" onclick="window.scrollTo({top:0,behavior:'smooth'})">

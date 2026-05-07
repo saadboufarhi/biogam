@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Catalogue Produits – BioGam Shop</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+  <link href="assets/css/style.css" rel="stylesheet"/>
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg">
+  <div class="container">
+    <a class="navbar-brand d-flex align-items-center gap-2" href="index.html">
+      <img src="assets/images/biogam-logo.png" alt="BioGam Shop Logo" id="nav-logo">
+    </a>
+    <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-center" id="navMenu">
+      <ul class="navbar-nav gap-1 mx-auto">
+        <li class="nav-item"><a class="nav-link" href="index.html#accueil">Accueil</a></li>
+        <li class="nav-item"><a class="nav-link" href="index.html#pourquoi">Pourquoi Bio ?</a></li>
+        <li class="nav-item"><a class="nav-link" href="index.html#produits">Produits</a></li>
+        <li class="nav-item"><a class="nav-link active" href="product.html">Catalogue</a></li>
+        <li class="nav-item"><a class="nav-link" href="index.html#ingredients">Ingrédients</a></li>
+        <li class="nav-item"><a class="nav-link" href="index.html#avis">Avis</a></li>
+        <li class="nav-item"><a class="nav-link" href="index.html#contact">Contact</a></li>
+      </ul>
+    </div>
+    <div class="d-none d-lg-flex align-items-center gap-2">
+      <a href="https://wa.me/213000000000" target="_blank" class="nav-link btn-whatsapp btn-icon-only" title="WhatsApp">
+        <i class="bi bi-whatsapp"></i>
+      </a>
+      <a href="https://www.instagram.com/biogam.shop/" target="_blank" class="nav-link btn-insta btn-icon-only" title="Instagram">
+        <i class="bi bi-instagram"></i>
+      </a>
+    </div>
+  </div>
+</nav>
+
+<!-- CATALOG HERO -->
+<section class="catalog-hero">
+  <div class="container">
+    <span class="section-badge">Notre Catalogue</span>
+    <h1>Tous Nos Produits Bio</h1>
+    <div class="divider"></div>
+    <p>Explorez l'ensemble de notre gamme de cosmétiques 100% naturels. Filtrez par catégorie pour trouver le soin parfait.</p>
+  </div>
+</section>
+
+<!-- TOOLBAR -->
+<div class="catalog-toolbar">
+  <div class="container">
+    <div class="d-flex flex-wrap align-items-center justify-content-between gap-3">
+      <div class="product-filters d-flex flex-wrap gap-2">
+        <button class="filter-btn active" data-filter="all">Tous</button>
+        <button class="filter-btn" data-filter="masques">🧖 Masques</button>
+        <button class="filter-btn" data-filter="huiles">🫒 Huiles</button>
+        <button class="filter-btn" data-filter="cremes">🧴 Crèmes</button>
+        <button class="filter-btn" data-filter="soins">✨ Soins</button>
+      </div>
+      <input type="text" class="catalog-search" id="catalogSearch" placeholder="Rechercher un produit...">
+    </div>
+    <div class="catalog-count mt-2">
+      <span id="productCount"><strong>11</strong> produits</span>
+    </div>
+  </div>
+</div>
+
+<!-- PRODUCTS GRID -->
+<section class="catalog-body">
+  <div class="container">
+    <div class="row g-4 catalog-grid" id="catalogGrid">
+
+      <!-- 1 -->
+      <div class="col-sm-6 col-lg-3 fade-up product-item" data-category="masques" data-name="ماسك الكنكر masque curcuma">
+        <div class="product-card-v2">
+          <div class="product-img-wrap">
+            <img src="assets/images/product/ماسك الكنكر.webp" alt="ماسك الكنكر">
+            <div class="product-overlay">
+              <a href="https://wa.me/213000000000" target="_blank" class="overlay-btn"><i class="bi bi-whatsapp"></i></a>
+              <a href="https://www.instagram.com/biogam.shop/" target="_blank" class="overlay-btn"><i class="bi bi-instagram"></i></a>
+            </div>
+            <span class="product-badge badge-hot">Bestseller</span>
+          </div>
+          <div class="product-info">
+            <span class="product-category">Masques</span>
+            <h5 class="product-name">ماسك الكنكر</h5>
+            <p class="product-name-sub">Masque au Curcuma</p>
+            <div class="product-rating">★★★★★ <span>(52)</span></div>
+            <div class="product-footer">
+              <a href="https://wa.me/213000000000" target="_blank" class="btn-commander"><i class="bi bi-whatsapp me-1"></i>Commander</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 2 -->
+      <div class="col-sm-6 col-lg-3 fade-up product-item" data-category="masques" data-name="ماسك مجدد الخلايا البشرة masque regenerant">
+        <div class="product-card-v2">
+          <div class="product-img-wrap">
+            <img src="assets/images/product/ماسك مجدد الخلايا البشرة.webp" alt="ماسك مجدد الخلايا البشرة">
+            <div class="product-overlay">
+              <a href="https://wa.me/213000000000" target="_blank" class="overlay-btn"><i class="bi bi-whatsapp"></i></a>
+              <a href="https://www.instagram.com/biogam.shop/" target="_blank" class="overlay-btn"><i class="bi bi-instagram"></i></a>
+            </div>
+            <span class="product-badge badge-new">Nouveau</span>
+          </div>
+          <div class="product-info">
+            <span class="product-category">Masques</span>
+            <h5 class="product-name">ماسك مجدد الخلايا البشرة</h5>
+            <p class="product-name-sub">Masque Régénérant Cellulaire</p>
+            <div class="product-rating">★★★★★ <span>(38)</span></div>
+            <div class="product-footer">
+              <a href="https://wa.me/213000000000" target="_blank" class="btn-commander"><i class="bi bi-whatsapp me-1"></i>Commander</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 3 -->
+      <div class="col-sm-6 col-lg-3 fade-up product-item" data-category="soins" data-name="غاسول الوجه ghassoul visage">
+        <div class="product-card-v2">
+          <div class="product-img-wrap">
+            <img src="assets/images/product/غاسول الوجه.webp" alt="غاسول الوجه">
+            <div class="product-overlay">
+              <a href="https://wa.me/213000000000" target="_blank" class="overlay-btn"><i class="bi bi-whatsapp"></i></a>
+              <a href="https://www.instagram.com/biogam.shop/" target="_blank" class="overlay-btn"><i class="bi bi-instagram"></i></a>
+            </div>
+            <span class="product-badge badge-hot">Top Vente</span>
+          </div>
+          <div class="product-info">
+            <span class="product-category">Soins Visage</span>
+            <h5 class="product-name">غاسول الوجه</h5>
+            <p class="product-name-sub">Ghassoul pour le Visage</p>
+            <div class="product-rating">★★★★★ <span>(64)</span></div>
+            <div class="product-footer">
+              <a href="https://wa.me/213000000000" target="_blank" class="btn-commander"><i class="bi bi-whatsapp me-1"></i>Commander</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 4 -->
+      <div class="col-sm-6 col-lg-3 fade-up product-item" data-category="cremes" data-name="citron huile amande creme mains">
+        <div class="product-card-v2">
+          <div class="product-img-wrap">
+            <img src="assets/images/product/Citron et Huile d'Amande Crème pour les mains.webp" alt="Crème Citron &amp; Amande">
+            <div class="product-overlay">
+              <a href="https://wa.me/213000000000" target="_blank" class="overlay-btn"><i class="bi bi-whatsapp"></i></a>
+              <a href="https://www.instagram.com/biogam.shop/" target="_blank" class="overlay-btn"><i class="bi bi-instagram"></i></a>
+            </div>
+          </div>
+          <div class="product-info">
+            <span class="product-category">Crèmes</span>
+            <h5 class="product-name">Crème Citron &amp; Huile d'Amande</h5>
+            <p class="product-name-sub">Crème pour les Mains</p>
+            <div class="product-rating">★★★★★ <span>(29)</span></div>
+            <div class="product-footer">
+              <a href="https://wa.me/213000000000" target="_blank" class="btn-commander"><i class="bi bi-whatsapp me-1"></i>Commander</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 5 -->
+      <div class="col-sm-6 col-lg-3 fade-up product-item" data-category="cremes" data-name="orchidee amande creme mains">
+        <div class="product-card-v2">
+          <div class="product-img-wrap">
+            <img src="assets/images/product/Orchidée et Huile d'Amande Crème pour les mains.webp" alt="Crème Orchidée &amp; Amande">
+            <div class="product-overlay">
+              <a href="https://wa.me/213000000000" target="_blank" class="overlay-btn"><i class="bi bi-whatsapp"></i></a>
+              <a href="https://www.instagram.com/biogam.shop/" target="_blank" class="overlay-btn"><i class="bi bi-instagram"></i></a>
+            </div>
+            <span class="product-badge badge-new">Nouveau</span>
+          </div>
+          <div class="product-info">
+            <span class="product-category">Crèmes</span>
+            <h5 class="product-name">Crème Orchidée &amp; Huile d'Amande</h5>
+            <p class="product-name-sub">Crème pour les Mains</p>
+            <div class="product-rating">★★★★☆ <span>(33)</span></div>
+            <div class="product-footer">
+              <a href="https://wa.me/213000000000" target="_blank" class="btn-commander"><i class="bi bi-whatsapp me-1"></i>Commander</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 6 -->
+      <div class="col-sm-6 col-lg-3 fade-up product-item" data-category="huiles" data-name="huile problemes capillaires cheveux">
+        <div class="product-card-v2">
+          <div class="product-img-wrap">
+            <img src="assets/images/product/HUILE POUR RÉSOUORE LES PROBLEMES CAPILLAIRES زيت لحل مشاكل الشعر.webp" alt="Huile Capillaire">
+            <div class="product-overlay">
+              <a href="https://wa.me/213000000000" target="_blank" class="overlay-btn"><i class="bi bi-whatsapp"></i></a>
+              <a href="https://www.instagram.com/biogam.shop/" target="_blank" class="overlay-btn"><i class="bi bi-instagram"></i></a>
+            </div>
+            <span class="product-badge badge-hot">Bestseller</span>
+          </div>
+          <div class="product-info">
+            <span class="product-category">Huiles</span>
+            <h5 class="product-name">زيت لحل مشاكل الشعر</h5>
+            <p class="product-name-sub">Huile Anti-Problèmes Capillaires</p>
+            <div class="product-rating">★★★★★ <span>(71)</span></div>
+            <div class="product-footer">
+              <a href="https://wa.me/213000000000" target="_blank" class="btn-commander"><i class="bi bi-whatsapp me-1"></i>Commander</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 7 -->
+      <div class="col-sm-6 col-lg-3 fade-up product-item" data-category="huiles" data-name="huile ricin زيت الخروع">
+        <div class="product-card-v2">
+          <div class="product-img-wrap">
+            <img src="assets/images/product/Huile de Ricin زيت الخروع.webp" alt="Huile de Ricin">
+            <div class="product-overlay">
+              <a href="https://wa.me/213000000000" target="_blank" class="overlay-btn"><i class="bi bi-whatsapp"></i></a>
+              <a href="https://www.instagram.com/biogam.shop/" target="_blank" class="overlay-btn"><i class="bi bi-instagram"></i></a>
+            </div>
+          </div>
+          <div class="product-info">
+            <span class="product-category">Huiles</span>
+            <h5 class="product-name">زيت الخروع</h5>
+            <p class="product-name-sub">Huile de Ricin</p>
+            <div class="product-rating">★★★★★ <span>(45)</span></div>
+            <div class="product-footer">
+              <a href="https://wa.me/213000000000" target="_blank" class="btn-commander"><i class="bi bi-whatsapp me-1"></i>Commander</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 8 -->
+      <div class="col-sm-6 col-lg-3 fade-up product-item" data-category="huiles" data-name="huile fenugrec زيت الحلبة">
+        <div class="product-card-v2">
+          <div class="product-img-wrap">
+            <img src="assets/images/product/Huile de Fenugrec زيت الحلب.webp" alt="Huile de Fenugrec">
+            <div class="product-overlay">
+              <a href="https://wa.me/213000000000" target="_blank" class="overlay-btn"><i class="bi bi-whatsapp"></i></a>
+              <a href="https://www.instagram.com/biogam.shop/" target="_blank" class="overlay-btn"><i class="bi bi-instagram"></i></a>
+            </div>
+          </div>
+          <div class="product-info">
+            <span class="product-category">Huiles</span>
+            <h5 class="product-name">زيت الحلبة</h5>
+            <p class="product-name-sub">Huile de Fenugrec</p>
+            <div class="product-rating">★★★★☆ <span>(37)</span></div>
+            <div class="product-footer">
+              <a href="https://wa.me/213000000000" target="_blank" class="btn-commander"><i class="bi bi-whatsapp me-1"></i>Commander</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 9 -->
+      <div class="col-sm-6 col-lg-3 fade-up product-item" data-category="huiles" data-name="nigelle حبة البركة">
+        <div class="product-card-v2">
+          <div class="product-img-wrap">
+            <img src="assets/images/product/La Nigelle حبة البركة.webp" alt="La Nigelle">
+            <div class="product-overlay">
+              <a href="https://wa.me/213000000000" target="_blank" class="overlay-btn"><i class="bi bi-whatsapp"></i></a>
+              <a href="https://www.instagram.com/biogam.shop/" target="_blank" class="overlay-btn"><i class="bi bi-instagram"></i></a>
+            </div>
+            <span class="product-badge badge-hot">Top Vente</span>
+          </div>
+          <div class="product-info">
+            <span class="product-category">Huiles</span>
+            <h5 class="product-name">حبة البركة</h5>
+            <p class="product-name-sub">Huile de Nigelle</p>
+            <div class="product-rating">★★★★★ <span>(58)</span></div>
+            <div class="product-footer">
+              <a href="https://wa.me/213000000000" target="_blank" class="btn-commander"><i class="bi bi-whatsapp me-1"></i>Commander</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 10 -->
+      <div class="col-sm-6 col-lg-3 fade-up product-item" data-category="huiles" data-name="huile sesame زيت السمسم">
+        <div class="product-card-v2">
+          <div class="product-img-wrap">
+            <img src="assets/images/product/Huile de Sésame زيت السمسم.webp" alt="Huile de Sésame">
+            <div class="product-overlay">
+              <a href="https://wa.me/213000000000" target="_blank" class="overlay-btn"><i class="bi bi-whatsapp"></i></a>
+              <a href="https://www.instagram.com/biogam.shop/" target="_blank" class="overlay-btn"><i class="bi bi-instagram"></i></a>
+            </div>
+          </div>
+          <div class="product-info">
+            <span class="product-category">Huiles</span>
+            <h5 class="product-name">زيت السمسم</h5>
+            <p class="product-name-sub">Huile de Sésame</p>
+            <div class="product-rating">★★★★☆ <span>(42)</span></div>
+            <div class="product-footer">
+              <a href="https://wa.me/213000000000" target="_blank" class="btn-commander"><i class="bi bi-whatsapp me-1"></i>Commander</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 11 -->
+      <div class="col-sm-6 col-lg-3 fade-up product-item" data-category="huiles" data-name="huile royale luxe visage">
+        <div class="product-card-v2">
+          <div class="product-img-wrap">
+            <img src="assets/images/product/Huile Royale de Luxe زيت الملكي الفاخر للوجه.webp" alt="Huile Royale de Luxe">
+            <div class="product-overlay">
+              <a href="https://wa.me/213000000000" target="_blank" class="overlay-btn"><i class="bi bi-whatsapp"></i></a>
+              <a href="https://www.instagram.com/biogam.shop/" target="_blank" class="overlay-btn"><i class="bi bi-instagram"></i></a>
+            </div>
+            <span class="product-badge badge-premium">Premium</span>
+          </div>
+          <div class="product-info">
+            <span class="product-category">Huiles</span>
+            <h5 class="product-name">زيت الملكي الفاخر للوجه</h5>
+            <p class="product-name-sub">Huile Royale de Luxe</p>
+            <div class="product-rating">★★★★★ <span>(67)</span></div>
+            <div class="product-footer">
+              <a href="https://wa.me/213000000000" target="_blank" class="btn-commander"><i class="bi bi-whatsapp me-1"></i>Commander</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- No results message -->
+    <div class="no-results" id="noResults" style="display:none;">
+      <i class="bi bi-search"></i>
+      <h5>Aucun produit trouvé</h5>
+      <p>Essayez de modifier vos filtres ou votre recherche.</p>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container">
+    <div class="row g-5">
+      <div class="col-lg-4">
+        <div class="brand d-flex align-items-center gap-2">
+          <img src="assets/images/biogam-logo.png" alt="BioGam Shop Logo" style="height:80px;object-fit:contain;">
+        </div>
+        <p>Votre boutique de cosmétiques bio 100% naturels.</p>
+        <div class="social-icons mt-3">
+          <a href="https://www.instagram.com/biogam.shop/" target="_blank"><i class="bi bi-instagram"></i></a>
+          <a href="#"><i class="bi bi-facebook"></i></a>
+          <a href="https://wa.me/213000000000" target="_blank"><i class="bi bi-whatsapp"></i></a>
+          <a href="#"><i class="bi bi-tiktok"></i></a>
+        </div>
+      </div>
+      <div class="col-sm-6 col-lg-2">
+        <h6>Navigation</h6>
+        <ul>
+          <li><a href="index.html#accueil">Accueil</a></li>
+          <li><a href="index.html#pourquoi">Pourquoi Bio ?</a></li>
+          <li><a href="product.html">Catalogue</a></li>
+          <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+      </div>
+      <div class="col-sm-6 col-lg-3">
+        <h6>Nos Produits</h6>
+        <ul>
+          <li><a href="#">Huiles Végétales</a></li>
+          <li><a href="#">Masques &amp; Gommages</a></li>
+          <li><a href="#">Crèmes</a></li>
+          <li><a href="#">Soins Cheveux</a></li>
+        </ul>
+      </div>
+      <div class="col-lg-3">
+        <h6>Commander</h6>
+        <ul>
+          <li><a href="https://wa.me/213000000000" target="_blank"><i class="bi bi-whatsapp me-1" style="color:var(--green-light)"></i>WhatsApp</a></li>
+          <li><a href="https://www.instagram.com/biogam.shop/" target="_blank"><i class="bi bi-instagram me-1" style="color:var(--green-light)"></i>Instagram</a></li>
+        </ul>
+      </div>
+    </div>
+    <hr class="footer-divider"/>
+    <div class="d-flex flex-wrap justify-content-between align-items-center gap-2">
+      <p class="footer-copy mb-0">© 2025 <a href="index.html">BioGam Shop</a>. Tous droits réservés.</p>
+      <p class="footer-copy mb-0">
+        <a href="#">Politique de confidentialité</a> · <a href="#">CGV</a>
+      </p>
+    </div>
+  </div>
+</footer>
+
+<!-- Floating WhatsApp -->
+<a href="https://wa.me/213000000000" target="_blank" class="whatsapp-float" title="WhatsApp">
+  <i class="bi bi-whatsapp"></i>
+</a>
+
+<!-- Scroll to top -->
+<button id="scrollTop" onclick="window.scrollTo({top:0,behavior:'smooth'})">
+  <i class="bi bi-arrow-up"></i>
+</button>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+// Scroll events
+const scrollBtn = document.getElementById('scrollTop');
+const navbar = document.querySelector('.navbar');
+window.addEventListener('scroll', () => {
+  scrollBtn.classList.toggle('show', window.scrollY > 400);
+  if (window.scrollY > 150) navbar.classList.add('scrolled');
+  else if (window.scrollY === 0) navbar.classList.remove('scrolled');
+});
+
+// Fade-up observer
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(e => {
+    if (e.isIntersecting) { e.target.classList.add('visible'); observer.unobserve(e.target); }
+  });
+}, { threshold: 0.08 });
+document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
+
+// Category filters
+const filterBtns = document.querySelectorAll('.filter-btn');
+const items = document.querySelectorAll('.product-item');
+const countEl = document.getElementById('productCount');
+const noResults = document.getElementById('noResults');
+let activeFilter = 'all';
+
+function applyFilters() {
+  const search = (document.getElementById('catalogSearch').value || '').toLowerCase();
+  let count = 0;
+  items.forEach(item => {
+    const matchCat = activeFilter === 'all' || item.dataset.category === activeFilter;
+    const matchSearch = !search || item.dataset.name.toLowerCase().includes(search) || item.querySelector('.product-name').textContent.toLowerCase().includes(search) || item.querySelector('.product-name-sub').textContent.toLowerCase().includes(search);
+    if (matchCat && matchSearch) {
+      item.classList.remove('hidden'); item.classList.add('visible'); count++;
+    } else {
+      item.classList.add('hidden'); item.classList.remove('visible');
+    }
+  });
+  countEl.innerHTML = '<strong>' + count + '</strong> produit' + (count > 1 ? 's' : '');
+  noResults.style.display = count === 0 ? 'block' : 'none';
+}
+
+filterBtns.forEach(btn => {
+  btn.addEventListener('click', () => {
+    filterBtns.forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    activeFilter = btn.dataset.filter;
+    applyFilters();
+  });
+});
+
+document.getElementById('catalogSearch').addEventListener('input', applyFilters);
+</script>
+</body>
+</html>
