@@ -325,6 +325,8 @@ h1, h2, h3, h4 { font-family: 'Playfair Display', serif; }
   transition: all .4s cubic-bezier(.4,0,.2,1);
   height: 100%;
   box-shadow: 0 2px 12px rgba(0,0,0,.04);
+  display: flex;
+  flex-direction: column;
 }
 .product-card-v2:hover {
   transform: translateY(-10px);
@@ -412,6 +414,9 @@ h1, h2, h3, h4 { font-family: 'Playfair Display', serif; }
 /* Product Info */
 .product-info {
   padding: 20px 22px 24px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
 }
 .product-category {
   display: inline-block;
@@ -448,22 +453,53 @@ h1, h2, h3, h4 { font-family: 'Playfair Display', serif; }
 .btn-commander {
   display: inline-flex;
   align-items: center;
+  justify-content: center;
   background: linear-gradient(135deg, var(--green-dark), var(--green-mid));
   color: #fff;
   border: none;
   border-radius: 25px;
-  padding: 10px 26px;
+  padding: 10px 20px;
   font-size: .85rem;
   font-weight: 600;
   text-decoration: none;
   transition: all .3s cubic-bezier(.4,0,.2,1);
   box-shadow: 0 4px 14px rgba(45,90,39,.2);
+  flex: 1;
 }
 .btn-commander:hover {
   transform: translateY(-2px);
   box-shadow: 0 8px 22px rgba(45,90,39,.35);
   color: #fff;
   background: linear-gradient(135deg, var(--green-mid), var(--green-light));
+}
+
+.btn-insta-card {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #f58529, #dd2a7b, #8134af);
+  color: #fff;
+  border: none;
+  border-radius: 25px;
+  padding: 10px 20px;
+  font-size: .85rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all .3s cubic-bezier(.4,0,.2,1);
+  box-shadow: 0 4px 14px rgba(221,42,123,.2);
+  flex: 1;
+}
+.btn-insta-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 22px rgba(221,42,123,.35);
+  color: #fff;
+  background: linear-gradient(135deg, #dd2a7b, #8134af);
+}
+
+.product-footer {
+  margin-top: auto;
+  display: flex;
+  gap: 10px;
 }
 
 /* Filter animation */
@@ -572,36 +608,25 @@ h1, h2, h3, h4 { font-family: 'Playfair Display', serif; }
 .testi-name { font-weight: 600; font-size: .92rem; }
 .testi-loc { font-size: .78rem; opacity: .65; }
 
-/* ───── INSTAGRAM GALLERY ───── */
-.insta-section { padding: 90px 0; background: var(--cream); }
-.insta-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; }
-.insta-item {
-  aspect-ratio: 1;
+/* ───── VIDEOS GALLERY ───── */
+.video-section { padding: 90px 0; background: var(--cream); }
+.video-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
+.video-item {
   border-radius: 16px;
-  display: flex; align-items: center; justify-content: center;
-  font-size: 3rem;
-  cursor: pointer;
-  transition: all .3s;
-  position: relative;
   overflow: hidden;
+  position: relative;
+  box-shadow: 0 6px 20px rgba(0,0,0,.06);
+  transition: all .3s;
+  background: #000;
+  display: flex;
 }
-.insta-item:hover { transform: scale(1.04); box-shadow: 0 10px 30px rgba(0,0,0,.15); }
-.insta-item .overlay {
-  position: absolute; inset: 0;
-  background: rgba(45,90,39,.7);
-  display: flex; align-items: center; justify-content: center;
-  opacity: 0; transition: .3s;
-  color: #fff; font-size: 1.8rem;
+.video-item:hover { transform: translateY(-6px); box-shadow: 0 12px 30px rgba(45,90,39,.15); }
+.video-item video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  aspect-ratio: 9/16;
 }
-.insta-item:hover .overlay { opacity: 1; }
-.ig1 { background: linear-gradient(135deg, #d4edda, #a8d8ae); }
-.ig2 { background: linear-gradient(135deg, #fef3cd, #fad28c); }
-.ig3 { background: linear-gradient(135deg, #d1ecf1, #9ad4de); }
-.ig4 { background: linear-gradient(135deg, #e2d9f3, #c5aef0); }
-.ig5 { background: linear-gradient(135deg, #f8d7da, #f4a7b0); }
-.ig6 { background: linear-gradient(135deg, #d5f5e3, #82e0aa); }
-.ig7 { background: linear-gradient(135deg, #fff3e0, #ffcc80); }
-.ig8 { background: linear-gradient(135deg, #e8eaf6, #9fa8da); }
 
 /* ───── NEWSLETTER ───── */
 .news-section { padding: 80px 0; background: var(--green-dark); }

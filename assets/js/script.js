@@ -22,26 +22,6 @@ const observer = new IntersectionObserver((entries) => {
 }, { threshold: 0.12 });
 document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
 
-// ── Newsletter subscribe ──
-function subscribeNewsletter() {
-  const input = document.querySelector('.news-input');
-  if (!input.value || !input.value.includes('@')) {
-    input.style.outline = '2px solid #ff6b6b';
-    setTimeout(() => input.style.outline = 'none', 2000);
-    return;
-  }
-  const toast = new bootstrap.Toast(document.getElementById('liveToast'));
-  toast.show();
-  input.value = '';
-}
-
-// ── Instagram gallery click → open Instagram ──
-document.querySelectorAll('.insta-item').forEach(item => {
-  item.addEventListener('click', () => {
-    window.open('https://www.instagram.com/biogam.shop/', '_blank');
-  });
-});
-
 // ── Product Category Filters ──
 document.querySelectorAll('.filter-btn').forEach(btn => {
   btn.addEventListener('click', () => {
