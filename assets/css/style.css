@@ -531,7 +531,7 @@ h1, h2, h3, h4 { font-family: 'Playfair Display', serif; }
   font-size: .9rem;
   font-weight: 500;
   color: var(--green-dark);
-  margin: 6px;
+  margin: 0;
   transition: all .25s;
 }
 .ingr-pill:hover {
@@ -541,6 +541,56 @@ h1, h2, h3, h4 { font-family: 'Playfair Display', serif; }
   transform: scale(1.05);
 }
 .ingr-pill span { font-size: 1.3rem; }
+
+/* Marquee Animation */
+.ingr-wrapper {
+  overflow: hidden;
+  padding: 20px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.ingr-row {
+  display: flex;
+  overflow: hidden;
+  user-select: none;
+  width: 100%;
+}
+
+.ingr-track {
+  display: flex;
+  gap: 15px;
+  flex-shrink: 0;
+  min-width: max-content;
+  padding: 0 7.5px;
+}
+
+.ingr-row:nth-child(odd) .ingr-track {
+  animation: marquee 40s linear infinite;
+}
+
+.ingr-row:nth-child(even) .ingr-track {
+  animation: marquee-reverse 40s linear infinite;
+}
+
+.ingr-wrapper:hover .ingr-track {
+  animation-play-state: paused;
+}
+
+@keyframes marquee {
+  from { transform: translateX(0); }
+  to { transform: translateX(calc(-50% - 7.5px)); }
+}
+
+@keyframes marquee-reverse {
+  from { transform: translateX(calc(-50% - 7.5px)); }
+  to { transform: translateX(0); }
+}
+
+@media (max-width: 768px) {
+  .ingr-track { animation-duration: 25s !important; }
+}
 
 /* ───── HOW IT WORKS ───── */
 .steps-section { padding: 90px 0; background: #fff; }
