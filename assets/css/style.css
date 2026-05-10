@@ -1178,6 +1178,13 @@ footer ul li a:hover {
     padding: 60px 0;
   }
 
+  #nav-logo {
+    height: 70px;
+  }
+  .navbar.scrolled #nav-logo {
+    height: 55px;
+  }
+
   .hero-circle {
     width: 260px;
     height: 260px;
@@ -1185,7 +1192,8 @@ footer ul li a:hover {
   }
 
   .hero-stats {
-    gap: 18px;
+    gap: 15px;
+    justify-content: center;
   }
 
   .video-grid {
@@ -1198,16 +1206,72 @@ footer ul li a:hover {
   }
 
   .product-img-wrap {
-    height: 220px;
+    height: clamp(160px, 40vw, 220px);
   }
 
   .filter-btn {
-    padding: 8px 16px;
-    font-size: .8rem;
+    padding: 8px 14px;
+    font-size: .78rem;
+    white-space: nowrap;
   }
 
   .product-name {
-    font-size: 1rem;
+    font-size: .95rem;
+  }
+
+  /* Catalog Page Mobile Refinements */
+  .catalog-hero {
+    padding: 100px 0 40px;
+  }
+
+  .catalog-toolbar {
+    padding: 15px 0;
+    top: 60px;
+  }
+
+  .catalog-search {
+    max-width: 100%;
+    font-size: .85rem;
+    padding: 10px 20px 10px 40px;
+  }
+
+  .product-filters {
+    justify-content: flex-start !important;
+    overflow-x: auto;
+    flex-wrap: nowrap !important;
+    padding-bottom: 5px;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none; /* Firefox */
+  }
+  .product-filters::-webkit-scrollbar {
+    display: none; /* Chrome/Safari */
+  }
+
+  .catalog-grid {
+    gap: 10px !important;
+  }
+
+  .product-card-v2 {
+    border-radius: 12px;
+  }
+
+  .product-info {
+    padding: 12px 10px 15px;
+  }
+
+  .btn-commander, .btn-insta-card {
+    padding: 8px 10px;
+    font-size: .75rem;
+  }
+}
+
+/* Extra Small Devices */
+@media (max-width: 400px) {
+  .col-6 {
+    width: 100% !important; /* Stack products on very small screens if they are too cramped */
+  }
+  .hero h1 {
+    font-size: 1.8rem;
   }
 }
 
