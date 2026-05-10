@@ -647,6 +647,8 @@ h4 {
   color: var(--green-dark);
   margin: 0;
   transition: all .25s;
+  text-decoration: none;
+  cursor: none;
 }
 
 .ingr-pill:hover {
