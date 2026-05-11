@@ -1252,8 +1252,10 @@ footer ul li a:hover {
     /* Chrome/Safari */
   }
 
-  .catalog-grid {
-    gap: 10px !important;
+  .catalog-grid .product-item {
+    flex: 0 0 50% !important;
+    max-width: 50% !important;
+    width: 50% !important;
   }
 
   .product-card-v2 {
