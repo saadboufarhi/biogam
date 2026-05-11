@@ -675,7 +675,8 @@ h4 {
   display: flex;
   overflow: hidden;
   user-select: none;
-  width: 100%;
+  width: 95%;
+  margin: 0 auto;
 }
 
 .ingr-track {
@@ -1181,6 +1182,7 @@ footer ul li a:hover {
   #nav-logo {
     height: 70px;
   }
+
   .navbar.scrolled #nav-logo {
     height: 55px;
   }
@@ -1241,10 +1243,13 @@ footer ul li a:hover {
     flex-wrap: nowrap !important;
     padding-bottom: 5px;
     -webkit-overflow-scrolling: touch;
-    scrollbar-width: none; /* Firefox */
+    scrollbar-width: none;
+    /* Firefox */
   }
+
   .product-filters::-webkit-scrollbar {
-    display: none; /* Chrome/Safari */
+    display: none;
+    /* Chrome/Safari */
   }
 
   .catalog-grid {
@@ -1259,7 +1264,8 @@ footer ul li a:hover {
     padding: 12px 10px 15px;
   }
 
-  .btn-commander, .btn-insta-card {
+  .btn-commander,
+  .btn-insta-card {
     padding: 8px 10px;
     font-size: .75rem;
   }
@@ -1267,9 +1273,6 @@ footer ul li a:hover {
 
 /* Extra Small Devices */
 @media (max-width: 400px) {
-  .col-6 {
-    width: 100% !important; /* Stack products on very small screens if they are too cramped */
-  }
   .hero h1 {
     font-size: 1.8rem;
   }
